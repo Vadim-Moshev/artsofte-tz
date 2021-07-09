@@ -1,0 +1,18 @@
+@import "../../scss_units/unit.scss";
+
+.header {
+  @include centralBlock(1170px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  margin: 0 auto;
+
+  .header__menu-and-create-account {
+    display: flex;
+    justify-content: space-between;
+    .menu {
+      margin-right: 37px;
+    }
+  }
+}

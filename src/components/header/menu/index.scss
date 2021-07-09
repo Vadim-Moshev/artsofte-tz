@@ -1,0 +1,23 @@
+@import "../../../scss_units/unit.scss";
+
+.menu {
+  display: flex;
+  align-items: center;
+  .menu_item {
+    margin-right: 44px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.5s ease-out;
+
+    &:hover {
+      color: gold;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

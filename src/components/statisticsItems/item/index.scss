@@ -1,0 +1,35 @@
+@import "../../../scss_units/unit.scss";
+
+.statistics-item {
+  color: #fff;
+  width: 205px;
+  height: 200px;
+  text-align: center;
+  transition: all 0.5s ease-out;
+  .statistics-item__icon {
+    font-size: 56px;
+    display: block;
+    margin-bottom: 57px;
+    transition: all 0.5s ease-out;
+  }
+
+  &:hover .statistics-item__icon {
+    transform: translateY(-20px);
+  }
+
+  &:hover {
+    color: gold;
+  }
+
+  .statistics-item__big-text {
+    font-size: 52px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+
+  .statistics-item__small-text {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+}

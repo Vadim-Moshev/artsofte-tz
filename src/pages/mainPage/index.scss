@@ -1,0 +1,128 @@
+@import "../../scss_units/unit.scss";
+
+.upper-block {
+  @include mainBlueGradient();
+
+  // padding-bottom: 641px;
+  .header-bar {
+    background-color: rgba(129, 129, 129, 0.1);
+    margin-bottom: 193px;
+  }
+
+  .take-a-card {
+    @include centralBlock(1170px);
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+
+    .take-a-card__header {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 38px;
+    }
+
+    .take-a-card__small-text {
+      width: 937px;
+      margin: 0 auto;
+      font-size: 14px;
+      font-family: "Nunito", sans-serif;
+      font-weight: 400;
+      margin-bottom: 36px;
+    }
+
+    .take-a-card__apply-button {
+      display: block;
+      width: 180px;
+      margin: 0 auto 92px;
+      text-decoration: none;
+      color: $MAIN_BLUE;
+      background-color: #fff;
+      padding: 17px 49px;
+      border-radius: 22px;
+      font-weight: 600;
+      transition: all 0.4s 0.1s ease-in;
+
+      &:hover {
+        transform: scale(1.5) rotate(360deg);
+        background-color: gold;
+      }
+    }
+
+    .take-a-card__three-cards-picture {
+      height: 509px;
+      background-image: url("../../img/three_cards.png");
+    }
+  }
+}
+
+.easy-process {
+  background-color: #f3f2f2;
+  padding-bottom: 201px;
+  margin-bottom: 159px;
+  .easy-process-central {
+    @include centralBlock(1170px);
+    padding-top: 160px;
+
+    .easy-process-central__thin-header {
+      margin-bottom: 21px;
+    }
+
+    .easy-process-central__bold-header {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.service-of-credit-card {
+  @include centralBlock(1170px);
+  padding-bottom: 158px;
+
+  .service-of-credit-card__thin-header {
+    margin-bottom: 21px;
+    text-align: left;
+  }
+
+  .service-of-credit-card__bold-header {
+    margin-bottom: 70px;
+    text-align: left;
+  }
+
+  .ccc {
+    opacity: 0.5;
+  }
+}
+
+.statistics {
+  height: 550px;
+  display: flex;
+  align-items: center;
+  background-color: $MAIN_BLUE;
+  background-image: url("../../img/statistics_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 137px;
+
+  .statistics__items {
+    @include centralBlock(1170px);
+  }
+}
+
+.form {
+  @include centralBlock(1170px);
+  .form__header {
+    text-align: left;
+    margin-bottom: 58px;
+  }
+}
+
+.footer {
+  background-color: $MAIN_BLUE;
+  background-image: url("../../img/footer_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  padding: 44px 0 77px;
+}

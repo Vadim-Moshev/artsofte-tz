@@ -1,0 +1,69 @@
+@import "../../../scss_units/unit.scss";
+
+.step {
+  border: 1px solid #d8dada;
+  padding: 49px 39px 48px 38px;
+  width: 291px;
+  background-color: #fff;
+  height: 246px;
+  transition: all 0.5s 0.1s linear;
+
+  &:hover {
+    transform: rotateY(180deg) scale(-1, 1);
+    background-color: gold;
+  }
+
+  .step__icon {
+    width: 100px;
+    height: 100px;
+    background-image: url("../../../img/sprite_steps.png");
+    background-repeat: no-repeat;
+    margin: 0 auto 27px;
+  }
+
+  .icon_1 {
+    width: 100px;
+    height: 100px;
+    background-position: 0 0;
+  }
+
+  .icon_2 {
+    width: 100px;
+    height: 100px;
+    background-position: 0 -100px;
+  }
+
+  .icon_3 {
+    width: 100px;
+    height: 100px;
+    background-position: 0 -200px;
+  }
+
+  .step__header {
+    color: #000;
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+
+  .step__text {
+    font-size: 14px;
+    line-height: 2;
+    color: $MAIN_GREY;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+  }
+}
+
+.active {
+  @include mainBlueGradient();
+  border-color: transparent;
+  padding-top: 91px;
+  padding-bottom: 91px;
+
+  .step__header,
+  .step__text {
+    color: #fff;
+  }
+}

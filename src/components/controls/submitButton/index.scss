@@ -1,0 +1,17 @@
+@import "../../../scss_units/unit.scss";
+
+.submit-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  background-color: $MAIN_BLUE;
+  border: none;
+  transition: background-color 0.2s linear;
+  &:hover {
+    background-color: gold;
+  }
+}

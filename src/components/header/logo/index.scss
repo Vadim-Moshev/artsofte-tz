@@ -1,0 +1,9 @@
+@import "../../../scss_units/unit.scss";
+
+.logo {
+  display: block;
+  width: 215px;
+  height: 46px;
+  background-image: url("../../../img/header_logo.png");
+  background-repeat: no-repeat;
+}
